@@ -144,6 +144,8 @@ MonoBehaviour:
   waveConfigs:
   - {fileID: 11400000, guid: 52c6b33071ee49447996ee0e8584ca53, type: 2}
   - {fileID: 11400000, guid: 0333893d644ba3c4aae634a117b2308a, type: 2}
+  startingWave: 0
+  looping: 1
 --- !u!4 &320513579
 Transform:
   m_ObjectHideFlags: 0
@@ -224,26 +226,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7238919718618383519, guid: e613beb10d76d6a40b66dc71b69c7a5f,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -5.48
-      objectReference: {fileID: 0}
-    - target: {fileID: 7238919718618383519, guid: e613beb10d76d6a40b66dc71b69c7a5f,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 4.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8370502265015095009, guid: e613beb10d76d6a40b66dc71b69c7a5f,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 4.48
-      objectReference: {fileID: 0}
-    - target: {fileID: 8370502265015095009, guid: e613beb10d76d6a40b66dc71b69c7a5f,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 5.46
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e613beb10d76d6a40b66dc71b69c7a5f, type: 3}

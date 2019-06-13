@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
-    [SerializeField]
-    float moveSpeed = 2f;
-    [SerializeField]
     WaveConfig waveConfig;
 
     int waypointIndex = 0;
     List<Transform> waypoints = new List<Transform>();
+
+    public void SetWaveConfig(WaveConfig waveConfig)
+    {
+        this.waveConfig = waveConfig;
+    }
 
     void Start()
     {
@@ -28,7 +30,7 @@ public class EnemyController : MonoBehaviour
         if (waypointIndex <= waypoints.Count - 1)
         {
             Vector3 targetPosition = waypoints[waypointIndex].transform.position;
-            float movementThisFrame = moveSpeed * Time.deltaTime;
+            float movementThisFrame = waveConfig.GetMoveSpeed() * Time.deltaTime;
             transform.position = Vector2.MoveTowards(transform.position, targetPosition, movementThisFrame);
             if (transform.position == targetPosition)
             {
